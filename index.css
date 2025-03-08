@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(assets/images/background-pattern-desktop.svg), var(--Grayishpurple);
+    background: url(assets/images/background-pattern-desktop.svg), var(--Lightpink);
     background-repeat: no-repeat;
     background-position: top, bottom;
     background-size: 100% auto;
