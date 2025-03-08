@@ -1,0 +1,100 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Lightpink: hsl(275, 100%, 97%);
+    --Grayishpurple: hsl(292, 16%, 49%);
+    --Darkpurple: hsl(292, 42%, 14%);
+}
+
+body {
+    background: url(assets/images/background-pattern-desktop.svg), var(--Grayishpurple);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+    background-size: 100% auto;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: var(--White);
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 800px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.container h1 {
+    display: inline;
+    font-size: xxx-large;
+}
+.maintitle {
+    display: flex;
+    align-items: center;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title:hover {
+    cursor: pointer;
+    color: var(--Darkpurple); /* 더 명확한 대비 */
+    transition: color 0.3s ease-in-out; /* 부드러운 변화 */
+}
+.maintitle img {
+    width: 35px;
+    height: 35px;
+    padding-right: 15px;
+}
+.qna {
+    font-weight: 600;
+    padding: 5px 15px;
+}
+.text {
+    padding: 15px 0;
+    display: none;
+    color: var(--Darkpurple);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.qna button,img {
+    border: none;
+    width: 25px;
+    height: 25px;
+    justify-items: center;
+    background-color: var(--White);
+    padding: 0;
+}
+.qna button:hover {
+    cursor: pointer;
+}
+.qna.active .text {
+    display: block;
+}
+.qna.active .toggle img {
+    content: url('assets/images/icon-minus.svg');
+}
+hr {
+    opacity: 0.3;
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 500px;
+        background-size: auto;
+        margin: auto;
+    }
+    .container {
+        width: 480px;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
